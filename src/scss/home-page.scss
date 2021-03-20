@@ -1,0 +1,32 @@
+.home {
+  padding: 100px 0 100px 0;
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+  &-pc-type-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .gaming {
+      background: url(../images/home/gaming-pc.webp) center no-repeat;
+      background-size: cover;
+    }
+    .office {
+      background: url(../images/home/office-pc.webp) center no-repeat;
+      background-size: cover;
+    }
+    .work {
+      background: url(../images/home/work-pc.webp) center no-repeat;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.catalog {
+  &-filter {
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 300px);
+  }
+}
