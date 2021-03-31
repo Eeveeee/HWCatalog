@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Work",
+    "price": 913500,
+    "info":
+      "CPU:AMD Ryzen Threadripper 3990X, GPU:RTX 3090 FEx2, RAM:512gb DDR4 G.Skill Trident, PCU: Seasonic 1200w Platinum, SSD: 2tb Samsung EVO 960x4, Motherboard: Asus Zenith sTRX4, Cooler:Cooler Master Wraith Ripper sTRX4, Case: Cooler Master Cosmos",
+    "img": "./src/images/home/work-pc.webp",
+    "keywords": ["work","expensive"]
+  },
+  {
+    "name": "Gaming",
+    "price": 325000,
+    "info":
+      "CPU:AMD Ryzen 9 5950X, GPU:RTX 3080 FE, RAM:32gb DDR4 G.Skill Ripjaws, PCU: Super Flower 700w Platinum, SSD: 1tb Samsung EVO 960x2, Motherboard: Asrock Taichi X570, Cooler:Noctua NH-15, Case: Deepcool Matrex 70",
+    "img": "./src/images/home/gaming-pc.webp",
+    "keywords": ["gaming", "expensive"]
+  },
+  {
+    "name": "Office",
+    "price": 35500,
+    "info":
+      "CPU:AMD Ryzen 5 PRO 4650G, GPU: IGP,, RAM:8gb DDR4 Samsung, 300w FSP, HDD: 500GB WD Blue, Motherboard: Asrock B450, Cooler:BOX, Case:DEXP DC-202M",
+    "img": "./src/images/home/office-pc.webp",
+    "keywords": ["office", "cheap"]
+  }
+]

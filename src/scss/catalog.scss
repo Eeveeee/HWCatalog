@@ -1,10 +1,83 @@
 .catalog {
+  padding-top: 50px;
   &-filter {
     background: rgba(255, 255, 255, 0.1);
-    width: 300px;
+    width: 250px;
     height: 600px;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: calc(50% - 300px);
+  }
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    @include wh(300px, auto);
+    background: rgba(255, 255, 255, 0.1);
+    &-photo {
+      width: auto;
+      max-width: none;
+      height: 100%;
+      &-wrapper {
+        overflow: hidden;
+        min-height: 300px;
+        max-height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 10px 50px;
+      font-size: 16px;
+      line-height: 120%;
+    }
+    &-title,
+    &-price {
+      font-size: 25px;
+      margin-bottom: 10px;
+      span {
+        font-size: 20px;
+      }
+    }
+    &-specs {
+      margin-bottom: 15px;
+    }
+  }
+  .filter {
+    &-option {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      margin-bottom: 5px;
+      user-select: none;
+      cursor: pointer;
+    }
+    &-checkbox {
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+      margin-right: 10px;
+      background: lighten(black, 20%);
+      @include wh(20px, 20px);
+      &:checked {
+        background: lighten(black, 10%);
+        &:after {
+          background: white;
+          position: absolute;
+          @include wh(6px, 6px);
+          top: calc(50% - 3px);
+          left: calc(50% - 3px);
+          content: "";
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
