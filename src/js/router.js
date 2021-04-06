@@ -10,16 +10,16 @@ const rout = window.location.href.split('/')
 const routes = {
   '#home': homePage,
   '#catalog': catalogPage,
-  '#catalog#gaming': catalogPage,
-  '#catalog#work': catalogPage,
-  '#catalog#office': catalogPage,
+  '#catalog&gaming': catalogPage,
+  '#catalog&work': catalogPage,
+  '#catalog&office': catalogPage,
 }
 const routesHTML = {
   '#home': homePageHTML,
   '#catalog': catalogPageHTML,
-  '#catalog#gaming': catalogPageHTML,
-  '#catalog#work': catalogPageHTML,
-  '#catalog#office': catalogPageHTML,
+  '#catalog&gaming': catalogPageHTML,
+  '#catalog&work': catalogPageHTML,
+  '#catalog&office': catalogPageHTML,
 }
 if (!rout[rout.length - 1]) {
   window.location.href = '#home'

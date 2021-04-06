@@ -6,7 +6,7 @@ export function homePage(render, addListener, changeLink, homePageHTML) {
     e.stopPropagation()
     const button = e.target
     if (button.dataset.type) {
-      changeLink(`catalog#${button.dataset.type}`)
+      changeLink(`catalog&${button.dataset.type}`)
     } else {
       changeLink(`catalog`)
     }
